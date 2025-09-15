@@ -1,0 +1,63 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* Add to your global.css or Tailwind base layer */
+.glass-header {
+  height: 64px;
+  /* background: rgba(255, 255, 255, 0.12); */
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1px);
+box-shadow: inset 1px 4px 10.9px rgba(255, 255, 255, 0.2);
+}
+/* Same glassy effect for the mobile dropdown */
+.glass-panel {
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 1px 4px 10.9px rgba(255, 255, 255, 0.2);
+  /* If you want a slight tint, uncomment: */
+  /* background: rgba(255, 255, 255, 0.12); */
+}
+
+.testDiv{
+    height: 64px;
+    width: 800px;
+  /* background: rgba(255, 255, 255, 0.12); */
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(1px);
+box-shadow: inset 1px 4px 10.9px rgba(255, 255, 255, 0.2);
+  
+}
+
+.wrapper { display: flex; justify-content: center; align-items: center; /* background-color: #0d0d0d; */ position: relative; /* background-image: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); */ background-size: 100px 100px; margin-top: 250px; margin-bottom: 100px;}
+.main_div{
+  width: 1300px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Powerfultitle {
+  font-size: 16px;
+  line-height: 60px;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Powerfulhighlight {
+  background: linear-gradient(to bottom, #E5C500, #FF7300);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

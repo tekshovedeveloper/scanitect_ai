@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: url('/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  src: url('/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 1000;
+  font-style: normal;
+}
+
+
+
+.PowerfulheroSection{
+  
+
+  position: relative;
+  /* background: #9ca3af; */
+  color: var(--text);
+  overflow: hidden;
+  padding-bottom: 220px;
+
+}
+
+/* subtle radial to lift center */
+.PowerfulheroSection::after {
+  content: "";
+  position: absolute;
+  inset: -20% -10% 0 -10%;
+  pointer-events: none;
+}
+
+/* gold-ish grid lines */
+.PowerfulheroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+
+.Powerfulinner {
+  /* height: 500px; */
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: #913737; */
+  color: #fff;
+  padding: 170px 20px 110px 20px ;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+
+.Powerfulcontent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  
+display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.Powerfultitle {
+     font-size: 48px;
+   line-height: 60px;
+  font-weight: 500;
+   font-family: 'SF Pro Display Bold', sans-serif;
+  /* font-size: 2.5rem;
+  font-weight: 600; */
+}
+
+.Powerfulhighlight {
+   background: linear-gradient(to bottom, #E5C500, #FF7300);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Powerfulsubtitle {
+  width: 80%;
+  color: #9ca3af;
+  /* background-color: #E5C500; */
+  margin: 10px 0 4px;
+  line-height: 35px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+   font-family: 'SF Pro Display Bold', sans-serif;
+}
+
+
+.PowerfulInner {
+  /* background-color: #535358; */
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
+
+/* Layout */
+.PowerfulGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+
+
+
+
+/* Glassy card */
+.PowerfulCard {
+
+   position: relative;
+
+  padding: 28px 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #1F2020, #08090A),
+              linear-gradient(180deg, #535358, #53535800) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 1px solid transparent;
+
+  /* remove this so the badge is not clipped */
+  /* overflow: hidden; */
+  overflow: visible;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.BadgeConnector {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 41px;
+  /* top: calc(-1 * var(--connectorH) + 1px);   */
+   top: 370px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;                                   /* behind the badge */
+  /* background-color: #16120e; */
+}
+
+/* image halves */
+.BadgeConnectorLeft,
+.BadgeConnectorRight {
+  height: 100%;
+  width: 50%;         /* let SVG keep its aspect ratio */
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  
+}
+
+/* ensure the badge is above the connector line */
+.PowerfulBadge { z-index: 2; position: absolute; top: -24px; left: 50%; transform: translateX(-50%); }
+
+
+
+
+
+
+
+.PowerfulBadge {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* over the card */
+}
+
+.PowerfulBadge > span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 6px 30px;
+  font-size: 14px;
+   font-family: 'SF Pro Display Medium', sans-serif;
+  
+  color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background:
+    /* Top-left glossy highlight */
+    radial-gradient(200% 120% at 80% 80%, rgba(255, 255, 255, 0.103), rgba(255, 255, 255, 0) 40%) padding-box,
+    /* Dark fill */
+    linear-gradient(60deg, #171717, #0f0f0f) padding-box,
+    /* Silver-ish border */
+    linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.06)) border-box;
+
+  /* Depth */
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.55),           /* outer */
+    inset 0 1px 1px rgba(255, 255, 255, 0.18), /* inner top highlight */
+    inset 0 -8px 20px rgba(0, 0, 0, 0.35);     /* inner bottom shade */
+
+}
+
+
+/* Icon box (yellow square) */
+.PowerfulIconBox {
+  width: 52px;
+  height: 52px;
+  margin: 12px auto 0;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #0a0a0a;
+  background: linear-gradient(180deg, #E5C500, #FF7300);
+}
+
+
+/* Text */
+.PowerfulTitle {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 19px;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: #fff;
+}
+
+.PowerfulText {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'SF Pro Display Medium', sans-serif;
+  color: #8A8F98;
+  max-width: 32ch;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+/* image halves */
+.BadgeConnectorLeft,
+.BadgeConnectorRight {
+
+  object-fit: contain;
+
+  
+}
+
+}
+
+@media (max-width: 900px) {
+
+
+.PowerfulheroSection{
+  
+/* background-color: #0a0a0acb; */
+  padding-bottom: 120px;
+  
+
+}
+
+.Powerfulinner {
+  /* height: 500px; */
+
+  padding: 50px 20px 110px 20px ;
+
+}
+
+
+
+  .Powerfulsubtitle {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px ;
+  }
+
+
+
+  .BadgeConnector {
+    display: none;
+  }
+  .PowerfulGrid {
+     grid-template-columns: 1fr;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: -50px;
+   gap: 60px;
+     }
+
+     .PowerfulCard {
+      width: 60%;
+     }
+}
+@media (max-width: 768px) {
+  .Powerfultitle{
+
+    font-size: 40px;
+    line-height: 1.4;
+  
+  }
+
+}
+
+
+
+@media (max-width: 570px) {
+  .Powerfultitle {
+   
+   font-size: 40px;
+    line-height: 1.5;
+  
+  }
+   .Powerfulsubtitle {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 15px ;
+  }
+
+    .PowerfulCard {
+      width: 90%;
+     }
+}
+
+
+@media (max-width: 420px) {
+  .Powerfultitle {
+    
+    font-size: 38px;
+    line-height: 1.4;
+  }
+}
