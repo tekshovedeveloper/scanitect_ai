@@ -44,7 +44,7 @@ export default function BackgroundVideo() {
       playsInline
       preload="none"
       poster="/videos/bg-poster.jpg"
-      src={src}
+      src={src} id="bg-video"
     />
   );
 }

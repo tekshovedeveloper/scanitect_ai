@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-.wrapper { 
+/* .wrapper { 
   display: flex; 
   justify-content: center;
    align-items: center;
@@ -20,11 +20,27 @@
   background-size: 100px 100px; 
   padding: 0px 40px;
   margin-top: 200px;
+  
+
+} */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 40px;
+  margin-top: 200px;
+  min-height: 60vh;
+
+ 
+  
 }
 
 .main_div{
   width: 1300px !important;
   display: flex;
+
   justify-content: center;
   align-items: center;
  
@@ -39,8 +55,8 @@
   justify-content: center;
   padding: 50px 40px 60px 40px;
   border-radius: 16px;
-  background: #FFFFFF0A; 
-  backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(4px); 
+  background: linear-gradient(180deg, #1F2020, #08090A);
+
    box-shadow: inset 1px 4px 10px rgba(255, 255, 255, 0.25); 
    border: 1px solid rgba(255, 255, 255, 0.01); 
   }
@@ -48,6 +64,8 @@
 
 
   
+
+
 
 
 .form {
