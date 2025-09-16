@@ -21,7 +21,7 @@ export default function Header() {
         {/* Desktop Navigation (unchanged, only hidden on mobile) */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           <Link href="/" passHref>
-            <span className="bg-white/20 text-white px-4 py-1 rounded-full shadow-inner">
+            <span className="nav_btn">
               Home
             </span>
           </Link>
@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* Desktop Sign Up (unchanged, only hidden on mobile) */}
         <Link href="/signup" passHref>
-          <div className="hidden md:block bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-md hover:bg-yellow-400 transition-all duration-200">
+          <div className="signup_btn">
             Sign up
           </div>
         </Link>

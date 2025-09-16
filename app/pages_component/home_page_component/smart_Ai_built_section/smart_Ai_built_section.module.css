@@ -183,6 +183,9 @@ display: flex;
 
 }
 
+.PowerfulCard:hover{
+  transform: translateY(-15px);
+}
 
 
 
