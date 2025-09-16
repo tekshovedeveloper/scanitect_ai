@@ -15,7 +15,7 @@ export default function LandmarkDetails () {
       <div className={styles.main_div}>
         <div className={styles.glassCard}>
           <div className={styles.content}>
-            <h1>
+            <h1 className={styles.landmark_heading}>
               Get <span className={styles.highlight}>Landmark</span> Details Instantly
             </h1>
             <p>

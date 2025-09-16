@@ -118,6 +118,7 @@
   object-fit: cover;
 }
 
+
 /* ---------- MEDIA QUERIES ---------- */
 
 
@@ -226,4 +227,8 @@
 }
 
 
+}
+
+.landmark_heading{
+  color: white !important;
 }
