@@ -37,7 +37,6 @@ export default function Header() {
           <Link href="/contact" passHref>
             <span className="text-gray-300 hover:text-white transition-colors">Contact</span>
           </Link>
-        </nav>
 
         {/* Desktop Sign Up (unchanged, only hidden on mobile) */}
         <Link href="/signup" passHref>
@@ -45,6 +44,7 @@ export default function Header() {
             Sign up
           </div>
         </Link>
+        </nav>
 
         {/* Mobile toggle button */}
         <button

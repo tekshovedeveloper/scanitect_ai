@@ -278,5 +278,8 @@ opacity: 1; /* only background fades in */
     height: 500px;
     margin-left: 20px;
 }
+.btn{
+  font-size: 12px;
+}
 
 }

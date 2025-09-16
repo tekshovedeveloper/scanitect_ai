@@ -20,7 +20,7 @@ export default function BackgroundVideo() {
     const w = window.innerWidth;
     let pick = '/videos/bg-480p.mp4';
     if (w >= 1024) pick = '/videos/bg-1080p.mp4';
-    else if (w >= 640) pick = '/videos/bg-720p.mp4';
+    else if (w >= 640) pick = '/videos/bg-480p.mp4';
     setSrc(pick);
 
     // Only play for capable devices
