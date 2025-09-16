@@ -11,6 +11,7 @@ import SmartAIBuiltSection from '@/app/pages_component/home_page_component/smart
 import LandmarkDetails from '@/app/pages_component/home_page_component/landmark_details/page'
 import ContactUs from './pages_component/home_page_component/contact_us/page';
 import Footer from './components/footer';
+import BackgroundVideo from './components/BackgroundVideo';
 
 
 
@@ -31,6 +32,7 @@ export default function Home() {
         <source src="/videos/Bg With Lines.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
+      <BackgroundVideo />
 
 
 
