@@ -21,7 +21,7 @@ export default function Home() {
   return (
  <div className="homeWrapper">
       {/* Background Video */}
-      <video
+      {/* <video
         className="backgroundVideo"
         autoPlay
         loop
@@ -30,7 +30,7 @@ export default function Home() {
       >
         <source src="/videos/Bg With Lines.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
 
 
