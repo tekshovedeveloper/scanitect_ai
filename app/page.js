@@ -10,6 +10,8 @@ import SmartAiTravel from '@/app/pages_component/home_page_component/smart_AI_tr
 import SmartAIBuiltSection from '@/app/pages_component/home_page_component/smart_Ai_built_section/page'
 import LandmarkDetails from '@/app/pages_component/home_page_component/landmark_details/page'
 import ContactUs from './pages_component/home_page_component/contact_us/page';
+import SubscribeForm from '@/app/pages_component/home_page_component/SubscribeForm/page'
+
 import Footer from './components/footer';
 import BackgroundVideo from './components/BackgroundVideo';
 
@@ -46,6 +48,7 @@ export default function Home() {
         <LandmarkDetails /> 
          <ContactUs />
          <Footer />
+         <SubscribeForm />
       </div>
     </div>
   );

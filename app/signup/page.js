@@ -1,11 +1,13 @@
 "use client"
 import { toggleModal } from "@/redux/slice";
 import { postRequest } from "@/utils/api";
+import { useRouter } from 'next/navigation';
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
 export default function Signup() {
   const dispatch = useDispatch();
+    const router = useRouter();
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -21,10 +23,20 @@ export default function Signup() {
     if (response) {
       console.log(response);
       dispatch(toggleModal('SIGN_UP'));
-      if (response.statusCode == 400) {
+
+      if(response.statusCode == 201)
+       {
+      console.log('signup successfully');
+      console.log(response);
+      // alert('successfully signed in');
+      // router.push('/signin');
+      router.push('/');
+    }
+      else if (response.statusCode == 400) {
         alert(response.error[0])
       }
-    } else {
+    }
+    else {
       console.log(response);
       dispatch(toggleModal('SIGN_UP'));
     }
@@ -50,7 +62,7 @@ export default function Signup() {
             type="text"
             id="username"
             name="username"
-            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
             value={formData.username} onChange={handleChange}
           />
 
@@ -61,7 +73,7 @@ export default function Signup() {
             type="text"
             id="first_name"
             name="first_name"
-            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
             value={formData.first_name} onChange={handleChange}
           />
 
@@ -72,7 +84,7 @@ export default function Signup() {
             type="text"
             id="last_name"
             name="last_name"
-            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
             value={formData.last_name} onChange={handleChange}
           />
 
@@ -83,7 +95,7 @@ export default function Signup() {
             type="text"
             id="email"
             name="email"
-            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
             value={formData.email} onChange={handleChange}
           />
 
@@ -94,7 +106,7 @@ export default function Signup() {
             type="password"
             id="password"
             name="password"
-            className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            className="mt-1 p-2 border border-gray-300 rounded-md w-full text-black"
             value={formData.password} onChange={handleChange}
           />
           <button
