@@ -13,28 +13,28 @@ export default function PowerfulIntelligent() {
     PowerfulStep: "Step 1",
     PowerfulTitle: "Snap",
     PowerfulDesc:
-      "Point your camera at any landmark or building around you, and instantly unlock its story, history, and travel details.",
+      "Point your camera at any landmark or building that intrigues you ",
     iconSrc: "/image/Snap.svg",
   },
   {
     PowerfulStep: "Step 2",
     PowerfulTitle: "Identify",
     PowerfulDesc:
-      "Instantly see its name and story. Discover must‑know details and cultural insights. Get fun facts and tips for your visit.",
+      "Instantly see its name and story. Discover historical, architectural, cultural and current-day facts.",
     iconSrc: "/image/Identify.svg",
   },
   {
     PowerfulStep: "Step 3",
     PowerfulTitle: "Explore",
     PowerfulDesc:
-      "Quickly access tickets, tours, maps, opening hours, and other visiting details to make the most of your trip.",
+      "Quickly access tickets, tours, opening hours and get recommendations of other places of interest nearby ",
      iconSrc: "/image/Explore.svg",
   },
 ];
 
 
   return (
-    <section className={styles.PowerfulheroSection}>
+    <section className={styles.PowerfulheroSection} id='howItsWork'>
       {/* <div className={styles.gridOverlay}>
         {Array.from({ length: 12 }).map((_, i) => (
           <div key={i} className={styles.gridLine}></div>
@@ -47,7 +47,7 @@ export default function PowerfulIntelligent() {
           Simple <span className={styles.Powerfulhighlight}>Powerful</span> Intelligent
         </h1>
         <p className={styles.Powerfulsubtitle}>
-         Three simple steps to unlock the architectural secrets of any building you encounter.
+         Three simple steps to answer the question I wonder what that building is?
         </p>
       </div>
       </div>

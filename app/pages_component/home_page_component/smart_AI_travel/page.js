@@ -37,10 +37,10 @@ export default function SmartAiTravel() {
             <h1>
               Your Smart <span className={styles.smartAiTravelAccent}>AI Travel</span> Companion
             </h1>
-            <p className={styles.smartAiTravelLead}>
+            {/* <p className={styles.smartAiTravelLead}>
               More than just facts—our engine identifies landmarks worldwide,
               shares cultural stories, and connects you with everything you need to explore further.
-            </p>
+            </p> */}
             <ul className={styles.smartAiTravelChecklist}>
               <li>Instantly recognize landmarks and uncover their history</li>
               <li>Discover cultural stories, fun facts, and local insights</li>

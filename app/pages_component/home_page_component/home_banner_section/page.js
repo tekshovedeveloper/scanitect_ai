@@ -1,3 +1,4 @@
+"use client";
 import react from 'react';
 import styles from './home_banner.module.css';
 
@@ -13,16 +14,26 @@ export default function HomeBanner() {
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h2 className={styles.subtitle}>
-            <span className={styles.gradientText}>AI-Powered</span>
+            <span className={styles.gradientText}>Scan The City</span>
           </h2>
-          <h1 className={styles.title}>Travel Companion</h1>
+          <h1 className={styles.title}>Discover The Story</h1>
           <p className={styles.description}>
-            Explore the world smarter. Instantly identify landmarks, discover hidden stories, and plan your next stop all while traveling.
+           AI-powered travel companion to help you Instantly identify landmarks, discover interesting facts and plan your next stop….all without missing a moment.
           </p>
           <div className={styles.buttons}>
-            <button className={`${styles.btn} ${styles.btnPrimary}`}>
-              Get Notified
+            <button className={`${styles.btn} ${styles.btnPrimary}`}
+        onClick={(e) => {
+    e.preventDefault();
+    document.getElementById("subscribeForm")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+            
+            >
+              Sign up for early access
             </button>
+
             <button className={`${styles.btn} ${styles.btnSecondary}`}>
               <span>▶</span> Watch Demo
             </button>

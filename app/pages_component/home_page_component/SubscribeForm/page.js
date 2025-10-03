@@ -29,15 +29,15 @@ export default function SubscribeForm() {
   }
 
   return (
-    <section className={styles.smartAiTravelHero}>
+    <section className={styles.smartAiTravelHero} id='subscribeForm'>
       <div className={styles.smartAiTravelContainer}>
         <div className={styles.smartAiTravelHeroGrid}>
           <div className={styles.smartAiTravelCopy}>
             <h1>
-              Subscribe <span className={styles.smartAiTravelAccent}>Your</span> Mail
+             Be the <span className={styles.smartAiTravelAccent}>first</span> to know when <span className={styles.smartAiTravelAccent}>we are live </span> 
             </h1>
             <p className={styles.smartAiTravelLead}>
-              More than just facts—our engine identifies landmarks worldwide,
+              More than just facts our engine identifies landmarks worldwide,
               shares cultural stories, and connects you with everything you need to explore further.
             </p>
 

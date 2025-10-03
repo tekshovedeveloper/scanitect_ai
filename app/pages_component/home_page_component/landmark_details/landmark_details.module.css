@@ -61,6 +61,7 @@
   font-size: clamp(24px, 5vw, 40px); /* scales by screen */
   font-weight: 600;
   font-family: 'SF Pro Display Bold', sans-serif;
+
 }
 
 .highlight {
@@ -75,7 +76,8 @@
   color: #ccc;
   line-height: 1.6;
   letter-spacing: 0.5px;
-  font-size: clamp(14px, 2.2vw, 18px);
+  font-size: 18px;
+  /* font-size: clamp(14px, 2.2vw, 18px); */
 }
 
 /* Store Button Section */

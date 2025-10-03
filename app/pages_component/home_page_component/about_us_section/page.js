@@ -9,7 +9,7 @@ import styles from './about_us_section.module.css';
 export default function AboutUs() {
   return (
 
-    <section className={styles.hero}>
+    <section className={styles.hero} id="features">
       <div className={styles.inner}>
         {/* Left copy */}
         <div className={styles.copy}>
@@ -18,20 +18,21 @@ export default function AboutUs() {
           </h1>
 
           <p className={styles.lead}>
-            Scanticet instantly identifies landmarks and shares their stories.Get 
-            tickets, tours, and visiting hours—anywhere you explore.
+            ScanitectAI is redefining what it means to be a tourist.
             
           </p>
 
           <ul className={styles.list}>
             <li className={styles.item}>
-              <span className={styles.dot} /> Instantly recognize landmarks and buildings
+              <span className={styles.dot} />Your interests: Not a generic packaged tour
             </li>
+         <li className={styles.item}>
+          
+   <span className={styles.dot} /> Real-time discovery: suggestions and recommendations of interesting things nearby
+ 
+</li>
             <li className={styles.item}>
-              <span className={styles.dot} /> Get cultural & historic insights in seconds
-            </li>
-            <li className={styles.item}>
-              <span className={styles.dot} /> Explore nearby attractions and visiting tips
+              <span className={styles.dot} /> Instantly satisfy your curiosity: no need to research or read a tourbook  
             </li>
           </ul>
         </div>

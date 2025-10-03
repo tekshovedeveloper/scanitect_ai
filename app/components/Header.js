@@ -25,21 +25,51 @@ export default function Header() {
               Home
             </span>
           </Link>
-          <Link href="/features" passHref>
+          <Link href="#features"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#features")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
             <span className="text-gray-300 hover:text-white transition-colors">Features</span>
           </Link>
-          <Link href="/how-it-works" passHref>
+          <Link href="#howItsWork"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#howItsWork")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
             <span className="text-gray-300 hover:text-white transition-colors">How it Works</span>
           </Link>
-          <Link href="/technology" passHref>
+          <Link href="#technology"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#technology")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
             <span className="text-gray-300 hover:text-white transition-colors">Technology</span>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="#contactUs"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#contactUs")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
             <span className="text-gray-300 hover:text-white transition-colors">Contact</span>
           </Link>
 
         {/* Desktop Sign Up (unchanged, only hidden on mobile) */}
-        <Link href="/signup" passHref>
+        <Link href="#subscribeForm"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#subscribeForm")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
           <div className="signup_btn">
             Sign up
           </div>
@@ -80,29 +110,59 @@ export default function Header() {
                   Home
                 </span>
               </Link>
-              <Link href="/features" passHref>
+               <Link href="#features"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#features")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
                 <span onClick={() => setOpen(false)} className="block w-full px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors">
                   Features
                 </span>
               </Link>
-              <Link href="/how-it-works" passHref>
+              <Link href="#howItsWork"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#howItsWork")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
                 <span onClick={() => setOpen(false)} className="block w-full px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors">
                   How it Works
                 </span>
               </Link>
-              <Link href="/technology" passHref>
+                <Link href="#technology"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#technology")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
                 <span onClick={() => setOpen(false)} className="block w-full px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors">
                   Technology
                 </span>
               </Link>
-              <Link href="/contact" passHref>
+              <Link href="#contactUs"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#contactUs")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
                 <span onClick={() => setOpen(false)} className="block w-full px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors">
                   Contact
                 </span>
               </Link>
             </nav>
 
-            <Link href="/signup" passHref>
+               <Link href="#subscribeForm"   onClick={(e) => {
+    e.preventDefault();
+    document.querySelector("#subscribeForm")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }} passHref>
               <div onClick={() => setOpen(false)} className="mt-3 w-full inline-flex items-center justify-center bg-white/20 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-yellow-400 transition-all">
                 Sign up
               </div>

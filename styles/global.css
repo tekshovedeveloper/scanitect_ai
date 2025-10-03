@@ -48,17 +48,39 @@ box-shadow: inset 1px 4px 10.9px rgba(255, 255, 255, 0.2);
   flex-direction: column;
 }
 .Powerfultitle {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 60px;
   font-family: 'SF Pro Display Bold', sans-serif;
   margin-bottom: 20px;
   color: white;
   text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 35px;
+  
 }
+
+
+
+/* .Powerfultitle span{
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 2;
+} */
 
 .Powerfulhighlight {
   background: linear-gradient(to bottom, #E5C500, #FF7300);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-right: 10px;
+ 
+}
+
+
+
+@media (max-width: 380px) {
+.Powerfultitle {
+  font-size: 18px;
+}
 }

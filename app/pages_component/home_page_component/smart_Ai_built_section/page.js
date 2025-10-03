@@ -13,28 +13,28 @@ export default function SmartAIBuiltSection() {
     PowerfulStep: "Step 1",
     PowerfulTitle: "Computer Vision",
     PowerfulDesc:
-      "Advanced CNN models for architectural feature detection",
+      "Advanced CNN (?) models for architectural feature detection ",
     iconSrc: "/image/computer_vision.svg",
   },
   {
     PowerfulStep: "Step 2",
     PowerfulTitle: "Machine Learning",
     PowerfulDesc:
-      "Deep neural networks trained on millions of buildings",
+      "Deep neural networks trained on millions of buildings ",
     iconSrc: "/image/machine_learning.svg",
   },
   {
     PowerfulStep: "Step 3",
     PowerfulTitle: "Knowledge Base",
     PowerfulDesc:
-      "Comprehensive architectural and historical databases",
+      "Comprehensive architectural, cultural and historical databases across the internet curated for tourists",
      iconSrc: "/image/knowledge_base.svg",
   },
 ];
 
 
   return (
-    <section className={styles.PowerfulheroSection}>
+    <section className={styles.PowerfulheroSection} id='technology'>
       {/* <div className={styles.gridOverlay}>
         {Array.from({ length: 12 }).map((_, i) => (
           <div key={i} className={styles.gridLine}></div>
@@ -47,8 +47,8 @@ export default function SmartAIBuiltSection() {
           Powered by <span className={styles.Powerfulhighlight}>Smart AI Built</span> for Travelers 
         </h1>
         <p className={styles.Powerfulsubtitle}>
-        Behind the scenes, we use advanced AI and huge databases. For you, it simply means easy
-        landmark recognition, trusted cultural insights, and hassle-free trip planning.
+       Behind the scenes, we use advanced AI and huge databases from across the entire internet.
+       For you, that means the most up-to-date, curated information in your hand…in an instant. 
         </p>
       </div>
       </div>

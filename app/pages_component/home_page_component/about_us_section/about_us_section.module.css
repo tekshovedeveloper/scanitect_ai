@@ -98,7 +98,7 @@
   color: var(--dim);
   margin: 10px 0 4px;
   line-height: 32px;
-  font-size: 16px;
+  font-size: 18px;
    font-family: 'SF Pro Display Bold', sans-serif;
 }
 /* .sublead {
@@ -208,20 +208,29 @@ background: linear-gradient(120deg, #1a1a1a, #080808),
   min-height: 130px;
   right: 145px;
   top: -58px;
-  /* opacity: 0.45; */
-background: linear-gradient(90deg, #1a1a1a, #080808),
- linear-gradient(90deg, #535358, rgba(83, 83, 88, 0)) border-box;
+  background: linear-gradient(90deg, #1a1a1a, #080808),
+  linear-gradient(90deg, #535358, rgba(83, 83, 88, 0)) border-box;
   background-origin: border-box;
   background-clip: padding-box, border-box;
   border: 1px solid transparent; 
   box-shadow: -6.91px 0 18.42px 0 rgba(0, 0, 0, 0.5);
-
+  opacity: 10;
 
 
 
   transition: all 0.8s ease;  /* Smooth transition */
   z-index: 1;
+  overflow: hidden;
   /* display: none; */
+}
+.backOne::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* cover the whole div */
+  background: rgba(27, 27, 27, 0.699); /* light gray with opacity */
+  pointer-events: none; /* don’t block clicks on buttons */
+  z-index: 10; /* above content */
+  transition: opacity 0.5s ease;
 }
 
 .backTwo {
@@ -242,6 +251,15 @@ background: linear-gradient(90deg, #1a1a1a, #080808),
 
   transition: all 0.8s ease;  /* Smooth transition */
   z-index: 1;
+}
+.backTwo::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* cover the whole div */
+  background: rgba(27, 27, 27, 0.699); /* light gray with opacity */
+  pointer-events: none; /* don’t block clicks on buttons */
+  z-index: 10; /* above content */
+  transition: opacity 0.5s ease;
 }
 
 /* Front card */
@@ -265,6 +283,7 @@ background: linear-gradient(90deg, #1a1a1a, #080808),
     -7px 0 26px rgba(0,0,0,0.55),
     0 16px 40px rgba(0,0,0,0.35);
   outline: none;
+   opacity: 0;
 }
 
 .front:hover,
@@ -277,6 +296,12 @@ background: linear-gradient(90deg, #1a1a1a, #080808),
   filter: blur(0) brightness(1);
   transform: translateY(-75px) rotateX(-18deg) rotateY(23deg); /* Add lift */
   /* z-index: 4;  */
+}
+
+.backOne:hover::after,
+.backTwo:hover::after
+ {
+  opacity: 0;
 }
 
 /* Content */

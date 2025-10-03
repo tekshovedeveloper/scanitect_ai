@@ -12,8 +12,7 @@ export default function Footer() {
             className="h-30 w-162"
           />
           <h6 className="Powerfultitle">
-            Discover architectural stories hidden in plain sight with
-            <span className="Powerfulhighlight"> Al-powered</span> building analysis.
+            <span className="Powerfulhighlight">Scan the City;</span> Discover the Story
           </h6>
         
          

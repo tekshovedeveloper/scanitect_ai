@@ -3,7 +3,7 @@ import styles from './contact_us.module.css';
 
 export default function ContactUs() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id='contactUs'>
 
     <div className={styles.main_div}>
         <div className={styles.glassCard}>

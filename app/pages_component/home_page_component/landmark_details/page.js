@@ -19,9 +19,9 @@ export default function LandmarkDetails () {
               Get <span className={styles.highlight}>Landmark</span> Details Instantly
             </h1>
             <p>
-              Access building information in just a few clicks. From property details and 
-              ownership records to floor plans and compliance reports—everything is instant, 
-              reliable, and hassle-free.
+              Access building information and satisfy your curiosity in just one click. Whether 
+              it’s architectural, historical or cultural information and recommendations you seek, 
+              it’s all right at your fingertips. 
             </p>
             <div className={styles.storeButtons}>
               <img 
