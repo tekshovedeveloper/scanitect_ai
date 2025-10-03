@@ -5,6 +5,7 @@ import "../../styles/global.css";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+    const [active, setActive] = useState("home");
 
   return (
     <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl">
@@ -20,10 +21,17 @@ export default function Header() {
 
         {/* Desktop Navigation (unchanged, only hidden on mobile) */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          <Link href="/" passHref>
-            <span className="nav_btn">
-              Home
-            </span>
+          <Link href="/" onClick={(e) => {
+    e.preventDefault();
+    // document.querySelector("#home")?.scrollIntoView({
+    //   behavior: "smooth",
+    //   block: "start",
+    // });
+      setActive("home");
+  }} passHref>
+             <span className={`text-gray-300 hover:text-white transition-colors ${
+            active === "home" ? "nav_btn" : ""
+          }`}>Home</span>
           </Link>
           <Link href="#features"   onClick={(e) => {
     e.preventDefault();
@@ -31,8 +39,11 @@ export default function Header() {
       behavior: "smooth",
       block: "start",
     });
+      setActive("features");
   }} passHref>
-            <span className="text-gray-300 hover:text-white transition-colors">Features</span>
+            <span className={`text-gray-300 hover:text-white transition-colors ${
+            active === "features" ? "nav_btn" : ""
+          }`}>Features</span>
           </Link>
           <Link href="#howItsWork"   onClick={(e) => {
     e.preventDefault();
@@ -40,8 +51,11 @@ export default function Header() {
       behavior: "smooth",
       block: "start",
     });
+      setActive("howItsWork");
   }} passHref>
-            <span className="text-gray-300 hover:text-white transition-colors">How it Works</span>
+            <span className={`text-gray-300 hover:text-white transition-colors ${
+            active === "howItsWork" ? "nav_btn" : ""
+          }`}>How it Works</span>
           </Link>
           <Link href="#technology"   onClick={(e) => {
     e.preventDefault();
@@ -49,8 +63,11 @@ export default function Header() {
       behavior: "smooth",
       block: "start",
     });
+    setActive("technology");
   }} passHref>
-            <span className="text-gray-300 hover:text-white transition-colors">Technology</span>
+            <span className={`text-gray-300 hover:text-white transition-colors ${
+            active === "technology" ? "nav_btn" : ""
+          }`}>Technology</span>
           </Link>
           <Link href="#contactUs"   onClick={(e) => {
     e.preventDefault();
@@ -58,8 +75,11 @@ export default function Header() {
       behavior: "smooth",
       block: "start",
     });
+    setActive("contactUs");
   }} passHref>
-            <span className="text-gray-300 hover:text-white transition-colors">Contact</span>
+            <span className={`text-gray-300 hover:text-white transition-colors ${
+            active === "contactUs" ? "nav_btn" : ""
+          }`}>Contact</span>
           </Link>
 
         {/* Desktop Sign Up (unchanged, only hidden on mobile) */}
@@ -69,6 +89,7 @@ export default function Header() {
       behavior: "smooth",
       block: "start",
     });
+    setActive("howItsWork");
   }} passHref>
           <div className="signup_btn">
             Sign up
