@@ -6,7 +6,7 @@ import { cookies } from 'next/headers';
 export default async function Profile() {
   const cookieStore = cookies();
   const access_token = cookieStore.get('access_token')?.value;
-  const data = await getData('v1/users/getuser', access_token);
+  const data = await getData('v1/users', access_token);
   let user = null;
   console.log('############', data)
   if (data.statusCode == 200) {

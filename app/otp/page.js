@@ -6,7 +6,7 @@ import { postRequest } from "@/utils/api";
 export default function OtpPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const email = searchParams.get("email"); // from signup redirect
+  const userEmail = searchParams.get("email"); // from signup redirect
 
   const [otp, setOtp] = useState("");
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes = 300 sec
@@ -34,9 +34,10 @@ const formatTime = (seconds) => {
       alert("OTP expired! Please request a new one.");
       return;
     }
-
+   
+    console.log("the user mail", userEmail)
     const response = await postRequest("v1/users/verify-otp", {
-      email,
+       userEmail,
       otp,
     });
 
@@ -55,7 +56,7 @@ const formatTime = (seconds) => {
         className="p-6 border border-gray-300 rounded-lg"
       >
         <h1 className="text-xl font-bold text-center mb-4">Verify OTP</h1>
-        <p className="mb-2">We sent an OTP to <b>{email}</b></p>
+        <p className="mb-2">We sent an OTP to <b>{userEmail}</b></p>
         <p className="mb-4 text-red-600">Expires in {formatTime(timeLeft)}</p>
 
         <input

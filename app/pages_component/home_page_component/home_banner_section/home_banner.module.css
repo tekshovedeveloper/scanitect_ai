@@ -124,28 +124,7 @@
   transition: all 0.3s ease;
 }
 
-/* .btnPrimary {
 
-  border: none;
-  
-  font-family: 'SF Pro Display Bold', sans-serif;
-  font-weight: 400;
-
- 
-  background-color: rgba(255, 255, 255, 0.04); 
-  border: 1px solid rgba(255, 255, 255, 0.01); 
-  color: #FFFFFF;
-  font-weight: 500;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-}
-
-.btnPrimary:hover {
-  background-color: #e5e5e5;
-} */
 
 
 .btnPrimary {
@@ -218,9 +197,9 @@ font-family: 'SF Pro Display Bold', sans-serif;
 font-weight: 400;
 background: transparent;
 border-radius: 12px;
-color: #FFFFFF; /* text stays the same /
-overflow: hidden;
-z-index: 0; / create stacking context */
+color: #FFFFFF; 
+/* overflow: hidden;
+z-index: 0;  */
 }
 
 .btnSecondary::before {
