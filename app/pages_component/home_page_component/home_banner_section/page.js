@@ -41,7 +41,7 @@ export default function HomeBanner() {
         </div>
       </div>
       <div className={styles.heroSectionImage}>
-           <img src='/image/home-banner-image-new.png' />
+           <img src='/image/home-banner-image.png' />
       </div>
     </div>
 

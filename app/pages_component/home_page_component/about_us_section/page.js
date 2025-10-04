@@ -22,7 +22,7 @@ export default function AboutUs() {
             
           </p>
 
-          <ul className={styles.list}>
+          {/* <ul className={styles.list}>
             <li className={styles.item}>
               <span className={styles.dot} />Your interests: Not a generic packaged tour
             </li>
@@ -34,7 +34,7 @@ export default function AboutUs() {
             <li className={styles.item}>
               <span className={styles.dot} /> Instantly satisfy your curiosity: no need to research or read a tourbook  
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* Right preview */}
@@ -44,12 +44,11 @@ export default function AboutUs() {
       <div className={`${styles.card} ${styles.backOne}`} aria-hidden>
          <header className={styles.header}>
           <span className={styles.badge} aria-hidden>⚡</span>
-          <h3 className={styles.cardTitle}>Deep Insight</h3>
+          <h3 className={styles.cardTitle}>Instantly satisfy your curiosity</h3>
         </header>
 
         <p className={styles.body}>
-          Advanced computer vision identifies architectural styles, historical periods,
-          and building types within seconds.
+          no need to research or read a tourbook
         </p>
       </div>
 
@@ -57,12 +56,11 @@ export default function AboutUs() {
       <div className={`${styles.card} ${styles.backTwo}`} aria-hidden>
           <header className={styles.header}>
           <span className={styles.badge} aria-hidden>⚡</span>
-          <h3 className={styles.cardTitle}>Lighting Fast</h3>
+          <h3 className={styles.cardTitle}>Real-time discovery</h3>
         </header>
 
         <p className={styles.body}>
-          Advanced computer vision identifies architectural styles, historical periods,
-          and building types within seconds.
+          suggestions and recommendations of interesting things nearby
         </p>
         </div> 
 
@@ -71,12 +69,11 @@ export default function AboutUs() {
       <article className={`${styles.card} ${styles.front}`} tabIndex={0}>
         <header className={styles.header}>
           <span className={styles.badge} aria-hidden>⚡</span>
-          <h3 className={styles.cardTitle}>Instant Recognition</h3>
+          <h3 className={styles.cardTitle}>Your interests</h3>
         </header>
 
         <p className={styles.body}>
-          Advanced computer vision identifies architectural styles, historical periods,
-          and building types within seconds.
+          Not a generic packaged tour
         </p>
       </article>
 
