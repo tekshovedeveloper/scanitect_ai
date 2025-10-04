@@ -22,7 +22,7 @@ export default function AboutUs() {
             
           </p>
 
-          {/* <ul className={styles.list}>
+          <ul className={styles.list}>
             <li className={styles.item}>
               <span className={styles.dot} />Your interests: Not a generic packaged tour
             </li>
@@ -34,7 +34,7 @@ export default function AboutUs() {
             <li className={styles.item}>
               <span className={styles.dot} /> Instantly satisfy your curiosity: no need to research or read a tourbook  
             </li>
-          </ul> */}
+          </ul>
         </div>
 
         {/* Right preview */}
