@@ -1,28 +1,16 @@
 @font-face {
-  font-family: 'SF Pro Display Medium';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-family: "SF Pro Display Medium";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF Pro Display Bold';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-family: "SF Pro Display Bold";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight: 1000;
   font-style: normal;
 }
-
-/* .wrapper { 
-  display: flex; 
-  justify-content: center;
-   align-items: center;
-   position: relative; 
-  background-size: 100px 100px; 
-  padding: 0px 40px;
-  margin-top: 200px;
-  
-
-} */
 
 .wrapper {
   display: flex;
@@ -32,22 +20,17 @@
   padding: 0 40px;
   margin-top: 200px;
   min-height: 60vh;
-
- 
-  
 }
 
-.main_div{
+.main_div {
   width: 1300px !important;
   display: flex;
 
   justify-content: center;
   align-items: center;
- 
-
 }
 
-.glassCard { 
+.glassCard {
   width: 100%;
   height: auto;
   display: flex;
@@ -55,40 +38,32 @@
   justify-content: center;
   padding: 50px 40px 60px 40px;
   border-radius: 16px;
-  background: linear-gradient(180deg, #1F2020, #08090A);
+  background: linear-gradient(180deg, #1f2020, #08090a);
 
-   box-shadow: inset 1px 4px 10px rgba(255, 255, 255, 0.25); 
-   border: 1px solid rgba(255, 255, 255, 0.01); 
-  }
-
-
-
-  
-
-
-
+  box-shadow: inset 1px 4px 10px rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
 
 .form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: 'SF Pro Display Medium', sans-serif;
+  font-family: "SF Pro Display Medium", sans-serif;
   color: white;
   /* background-color: aquamarine; */
-
 }
 
 .Powerfultitle {
   font-size: 48px;
   line-height: 60px;
-  font-family: 'SF Pro Display Bold', sans-serif;
+  font-family: "SF Pro Display Bold", sans-serif;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .Powerfulhighlight {
-   background: linear-gradient(to bottom, #E5C500, #FF7300);
+  background: linear-gradient(to bottom, #e5c500, #ff7300);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -134,60 +109,61 @@
 .submitButton {
   margin-top: 10px;
   padding: 16px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.1)
+  );
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   color: white;
   font-size: 16px;
-  font-family: 'SF Pro Display Medium', sans-serif;
+  font-family: "SF Pro Display Medium", sans-serif;
   cursor: pointer;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .submitButton:hover {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
-  transform:translateY(-10px);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.15)
+  );
+  transform: translateY(-10px);
 }
-
-
-
-
-
-
 
 @media (max-width: 768px) {
-  .wrapper { 
-  display: flex; 
-  justify-content: center;
-   align-items: center;
-   position: relative; 
-  background-size: 100px 100px; 
-  padding: 0px 40px;
-  margin-top: 120px;
-}
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: 100px 100px;
+    padding: 0px 20px;
+    margin-top: 120px;
+  }
   .glassCard {
     padding: 30px 20px;
   }
   .Powerfultitle {
-      font-size: 40px;
+    font-size: 40px;
     line-height: 1.4;
   }
 }
 
-
 @media (max-width: 550px) {
-.row {
+  .row {
     flex-direction: column;
+  }
+  .Powerfultitle {
+    font-size: 37px;
   }
 }
 
 @media (max-width: 420px) {
-    .wrapper { 
-  
-  padding: 0px 20px;
- 
-}
-
+  .wrapper {
+    padding: 0px 20px;
+  }
 
   .wrapper {
     margin-top: 5vh;
@@ -196,7 +172,7 @@
     gap: 16px;
   }
   .Powerfultitle {
-      font-size: 40px;
-    line-height: 1.4;
+    font-size: 36px;
+    line-height: 1.3;
   }
 }

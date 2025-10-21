@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* Page Content */}
       <div className="content">
-        <HomeBanner /> 
+        <HomeBanner />
         <AboutUs /> 
         <PowerfulIntelligent />
          <SmartAiTravel />

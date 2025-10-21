@@ -1,49 +1,35 @@
 @font-face {
-  font-family: 'SF Pro Display Medium';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-family: "SF Pro Display Medium";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF Pro Display Bold';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-family: "SF Pro Display Bold";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight: 1000;
   font-style: normal;
 }
 
-
-
-/* Global color variables (scoped globally) */
-/* :global(:root) {
-  #0b0c10: #0b0c10;
-  #0e1016: #0e1016;
-  #e7ebf0: #e7ebf0;
-  #a6adbb: #a6adbb;
-  #ffb020: #ffb020;
-  #ff7a18: #ff7a18;
-} */
-
-/* * { box-sizing: border-box; } */
-
 .smartAiTravelHero {
-  
   position: relative;
   padding: clamp(32px, 6vw, 80px) 0;
   overflow: hidden;
   color: #e7ebf0;
-   background: linear-gradient(180deg, #1F2020, #08090A)
-  /* background: radial-gradient(1200px 600px at 40% 0%, var(#0e1016), var(#0b0c10)); */
-  /* background-color: #8A8F98; */
+  background: linear-gradient(180deg, #1f2020, #08090a);
 }
 
-/* optional subtle grid lines background */
 .smartAiTravelHero::before {
   content: "";
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 120px 120px;
   opacity: 0.06;
   pointer-events: none;
@@ -61,18 +47,13 @@
   gap: clamp(24px, 5vw, 64px);
 }
 
-/* Left side media */
 .smartAiTravelMedia {
-  /* background-color: #E5C500; */
   height: 400px;
   position: relative;
-  /* aspect-ratio: 16 / 10; */
-  /* border-radius: 18px; */
   overflow: hidden;
-  box-shadow:
-    0 30px 70px rgba(0,0,0,0.5),
-    inset 0 0 0 1px rgba(255,255,255,0.06);
-     isolation: isolate; 
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  isolation: isolate;
 }
 
 .smartAiTravelMedia :global(span) {
@@ -81,24 +62,14 @@
   z-index: 0 !important;
 }
 
-
 .smartAiTravelMediaImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
- filter: grayscale(100%) contrast(1.05) brightness(0.8);
- z-index: 0;   
+  filter: grayscale(100%) contrast(1.05) brightness(0.8);
+  z-index: 0;
   transform: scale(1.02);
-
 }
-
-/* vignette to make buttons pop */
-/* .smartAiTravelMedia::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: radial-gradient(60% 70% at 50% 40%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.35) 80%);
-  pointer-events: none;
-} */
 
 .smartAiTravelOverlay {
   position: absolute;
@@ -118,9 +89,6 @@
   pointer-events: none;
 }
 
-
-
-/* glass buttons */
 .smartAiTravelGlassBtn {
   --r: -6deg;
   position: relative;
@@ -137,74 +105,54 @@
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.2px;
-
-  /* must be semi-transparent to see the blur */
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0.16) 0%,
-    rgba(255,255,255,0.08) 45%,
-    rgba(255,255,255,0.12) 100%
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(255, 255, 255, 0.12) 100%
   );
-  /* border: 1px solid rgba(255,255,255,0.22); */
 
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
-
-  /* box-shadow:
-    0 5.6px 7px rgba(0,0,0,0.055),
-    inset 1.4px 5.6px 14px rgba(255,255,255,0.06),
-    inset 0 -1px 0 rgba(0,0,0,0.07); */
   transform: skewX(15deg);
   transform-origin: center;
   pointer-events: auto;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
-
-
-
-  /* Depth */
-box-shadow:
-    0 5.6px 7px rgba(0,0,0,0.055),
-    inset 1.4px 5.6px 14px rgba(255,255,255,0.06),
-    inset 0 -1px 0 rgba(0,0,0,0.07); 
-
-
-    border: 1px solid transparent;
-    
+  box-shadow: 0 5.6px 7px rgba(0, 0, 0, 0.055),
+    inset 1.4px 5.6px 14px rgba(255, 255, 255, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+  border: 1px solid transparent;
 }
 
-
-
-/* Right side copy */
 .smartAiTravelCopy h1 {
   margin: 0 0 14px;
 
-     font-size: 48px;
-   line-height: 60px;
+  font-size: 48px;
+  line-height: 60px;
   font-weight: 500;
-   font-family: 'SF Pro Display Bold', sans-serif;
+  font-family: "SF Pro Display Bold", sans-serif;
 }
 
 .smartAiTravelAccent {
- background: linear-gradient(to bottom, #E5C500, #FF7300);
+  background: linear-gradient(to bottom, #e5c500, #ff7300);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .smartAiTravelLead {
-  
   margin: 0 0 18px;
-   color: #8A8F98;
+  color: #8a8f98;
   line-height: 35px;
   word-spacing: 1px;
   letter-spacing: 0.5px;
   font-size: 16px;
-   font-family: 'SF Pro Display Medium', sans-serif;
+  font-family: "SF Pro Display Medium", sans-serif;
 }
 
 .smartAiTravelChecklist {
   margin: 0px;
-  margin-top: 30px;;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
   display: grid;
@@ -214,12 +162,12 @@ box-shadow:
 .smartAiTravelChecklist li {
   position: relative;
   padding-left: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 25px;
   word-spacing: 1px;
   letter-spacing: 0.5px;
   font-size: 16px;
-   font-family: 'SF Pro Display Medium', sans-serif;
+  font-family: "SF Pro Display Medium", sans-serif;
 }
 
 .smartAiTravelChecklist li::before {
@@ -231,83 +179,77 @@ box-shadow:
   font-weight: 800;
 }
 
-/* responsive */
 @media (max-width: 900px) {
-.smartAiTravelHero{
-  padding-top: 90px ;
-  padding-bottom: 90px ;
-}
-
-    .smartAiTravelLead {
-    width: 100%;
-    /* margin: 0 auto; */
-    font-size: 15px;
-    line-height: 28px;
-    margin-top: 20px ;
+  .smartAiTravelHero {
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
+  .smartAiTravelLead {
+    width: 100%;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
 
-
-  .smartAiTravelHeroGrid { grid-template-columns: 1fr; }
-  .smartAiTravelOverlayStack { width: min(88%, 360px); }
+  .smartAiTravelHeroGrid {
+    grid-template-columns: 1fr;
+  }
+  .smartAiTravelOverlayStack {
+    width: min(88%, 360px);
+  }
 }
 
-
 @media (max-width: 768px) {
-  .smartAiTravelCopy h1{
- font-size: clamp(26px, 6vw, 36px);
+  .smartAiTravelCopy h1 {
+    font-size: clamp(26px, 6vw, 36px);
     line-height: 1.2;
   }
 
-
   .smartAiTravelOverlay {
-    /* background-color: #1F2020; */
-  position: absolute;
-  inset: 0;
-  display: grid;
-  align-items: center;
-  justify-items: end;
-  padding-right: clamp(12px, 6vw, 48px);
-  pointer-events: none;
-  z-index: 1;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    padding-right: clamp(12px, 6vw, 48px);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .smartAiTravelOverlayStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 14px;
+    pointer-events: none;
+  }
 }
-
-.smartAiTravelOverlayStack {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  gap: 14px;
-  /* background-color: #646464; */
-  pointer-events: none;
-}
-
-
-}
-
-
 
 @media (max-width: 570px) {
   .smartAiTravelCopy h1 {
-     font-size: 40px;
-    line-height: 1.5;
+    font-size: 37px;
+    line-height: 1.4;
   }
-   .smartAiTravelLead {
+  .smartAiTravelLead {
     width: 100%;
-    /* margin: 0 auto; */
     font-size: 14px;
     line-height: 26px;
-    margin-top: 15px ;
+    margin-top: 15px;
   }
 
+  .smartAiTravelChecklist li {
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+  }
 }
 
-
 @media (max-width: 420px) {
-  .smartAiTravelCopy h1{
-    
-    font-size: 38px;
-    line-height: 1.4;
+  .smartAiTravelCopy h1 {
+    font-size: 36px;
+    line-height: 1.3;
   }
 }
 
@@ -316,5 +258,7 @@ box-shadow:
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .smartAiTravelGlassBtn { transition: none; }
+  .smartAiTravelGlassBtn {
+    transition: none;
+  }
 }

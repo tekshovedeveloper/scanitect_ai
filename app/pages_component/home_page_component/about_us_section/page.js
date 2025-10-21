@@ -35,9 +35,13 @@ export default function AboutUs() {
           <div className={styles.cardStack}>
             <div className={`${styles.card} ${styles.backOne}`} aria-hidden>
               <header className={styles.header}>
-                 <span className={styles.badge} aria-hidden>
-    <img src='/image/back-one-card.svg' alt="" className={styles.icon} />
-  </span>
+                <span className={styles.badge} aria-hidden>
+                  <img
+                    src="/image/back-one-card.svg"
+                    alt=""
+                    className={styles.icon}
+                  />
+                </span>
                 <h3 className={styles.cardTitle}>
                   Instantly satisfy your curiosity
                 </h3>
@@ -50,9 +54,13 @@ export default function AboutUs() {
 
             <div className={`${styles.card} ${styles.backTwo}`} aria-hidden>
               <header className={styles.header}>
-                 <span className={styles.badge} aria-hidden>
-    <img src='/image/back-two-card.svg' alt="" className={styles.icon} />
-  </span>
+                <span className={styles.badge} aria-hidden>
+                  <img
+                    src="/image/back-two-card.svg"
+                    alt=""
+                    className={styles.icon}
+                  />
+                </span>
                 <h3 className={styles.cardTitle}>Real-time discovery</h3>
               </header>
 
@@ -63,9 +71,13 @@ export default function AboutUs() {
 
             <article className={`${styles.card} ${styles.front}`} tabIndex={0}>
               <header className={styles.header}>
-               <span className={styles.badge} aria-hidden>
-    <img src='/image/front-card.svg' alt="" className={styles.icon} />
-  </span>
+                <span className={styles.badge} aria-hidden>
+                  <img
+                    src="/image/front-card.svg"
+                    alt=""
+                    className={styles.icon}
+                  />
+                </span>
                 <h3 className={styles.cardTitle}>Your interests</h3>
               </header>
 

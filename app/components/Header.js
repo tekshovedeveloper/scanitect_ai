@@ -8,7 +8,8 @@ export default function Header() {
     const [active, setActive] = useState("home");
 
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl">
+    // <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl">
+   <header className="relative z-50 mx-auto w-[95%] max-w-6xl mt-4">
       <div className="glass-header rounded-full px-6 py-2 flex items-center justify-between">
         {/* Logo (unchanged) */}
         <div className="flex items-center space-x-2">

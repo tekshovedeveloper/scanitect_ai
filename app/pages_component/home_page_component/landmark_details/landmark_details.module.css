@@ -1,39 +1,37 @@
 @font-face {
-  font-family: 'SF Pro Display Medium';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-family: "SF Pro Display Medium";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SF Pro Display Bold';
-  src: url('/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-family: "SF Pro Display Bold";
+  src: url("/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight: 1000;
   font-style: normal;
 }
 
-/* Background wrapper */
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   background-size: 100px 100px;
-  padding: 40px 20px; /* adds breathing room on mobile */
+  padding: 40px 20px;
 }
 
 .main_div {
   width: 100%;
-  max-width: 1300px; /* flexible instead of hard 1300px */
+  max-width: 1300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Glass Card */
 .glassCard {
   display: flex;
-  flex-wrap: wrap; /* responsive adjustment */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0px 40px;
@@ -43,29 +41,24 @@
   -webkit-backdrop-filter: blur(8px);
   box-shadow: inset 1px 4px 10px rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  gap: 30px; /* space between text and image */
+  gap: 30px;
   width: 100%;
   height: 370px;
 }
 
-/* Text & Heading */
 .content {
-
-  flex: 1 1 350px; /* grow, shrink, min-width */
-  max-width: 600px; /* prevents text line too wide */
+  flex: 1 1 350px;
+  max-width: 600px;
   z-index: 10;
-
 }
 
 .content h1 {
-  font-size: clamp(24px, 5vw, 40px); /* scales by screen */
   font-weight: 600;
-  font-family: 'SF Pro Display Bold', sans-serif;
-
+  font-family: "SF Pro Display Bold", sans-serif;
 }
 
 .highlight {
-  background: linear-gradient(to bottom, #E5C500, #FF7300);
+  background: linear-gradient(to bottom, #e5c500, #ff7300);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -77,10 +70,8 @@
   line-height: 1.6;
   letter-spacing: 0.5px;
   font-size: 18px;
-  /* font-size: clamp(14px, 2.2vw, 18px); */
 }
 
-/* Store Button Section */
 .storeButtons {
   display: flex;
   flex-wrap: wrap;
@@ -98,9 +89,8 @@
   transform: scale(1.05);
 }
 
-/* Mockup Image */
 .phoneMock {
-  flex: 1 1 300px; /* grows/shrinks */
+  flex: 1 1 300px;
   max-width: 545px;
   display: flex;
   justify-content: center;
@@ -108,7 +98,7 @@
 
 .phoneMock img {
   width: 100%;
- height: 370px;
+  height: 370px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -120,27 +110,14 @@
   object-fit: cover;
 }
 
-
-/* ---------- MEDIA QUERIES ---------- */
-
-
 @media (max-width: 1024px) {
-
   .content {
-
-  flex: 1 1 450px; /* grow, shrink, min-width */
-  max-width: 600px; /* prevents text line too wide */
-  z-index: 10;
-
+    flex: 1 1 450px;
+    max-width: 600px;
+    z-index: 10;
+  }
 }
 
-
-}
-
-
-
-/* Tablet: stack content and allow auto height */
-/* Tablet & below */
 @media (max-width: 900px) {
   .glassCard {
     flex-direction: column;
@@ -152,54 +129,44 @@
   }
 
   .content {
-     flex: 1 1 300px;
+    flex: 1 1 300px;
     max-width: 80%;
     height: 300px;
   }
 
   .content h1 {
-  font-size: 40px; /* scales by screen */
-  font-weight: 600;
-  font-family: 'SF Pro Display Bold', sans-serif;
-}
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "SF Pro Display Bold", sans-serif;
+  }
 
-
-.content p {
-
-  font-size: 16px;
+  .content p {
+    font-size: 16px;
     font-weight: 500;
-   font-family: 'SF Pro Display Bold', sans-serif;
-}
-
+    font-family: "SF Pro Display Bold", sans-serif;
+  }
 
   .storeButtons {
     justify-content: center;
   }
 
-  /* Ensure fixed height is overridden */
   .phoneMock img,
   .phone_image {
-    
-    height: 450px !important;   
+    height: 450px !important;
     max-width: 100%;
     width: 100%;
   }
 }
 
-/* Mobile tweaks */
 @media (max-width: 600px) {
   .glassCard {
     padding: 30px 15px 0px 15px;
     gap: 50px;
   }
 
-  .content{
-      width: 100%;
+  .content {
+    width: 100%;
   }
-
-  
-
-
 
   .storeButtons img {
     height: 38px;
@@ -210,27 +177,33 @@
   }
 }
 
+@media (max-width: 570px) {
+  .content h1 {
+    font-size: 37px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+}
 
 @media (max-width: 460px) {
   .glassCard {
-    padding: 30px 15px 0px 15px;
+    padding: 50px 15px 0px 15px;
     gap: 50px;
   }
- .content {
-     width: 100%;
+  .content {
+    width: 100%;
     max-width: 100%;
     height: 300px;
   }
 
-    .content h1 {
-  font-size: 38px; 
-  font-weight: 600;
-  font-family: 'SF Pro Display Bold', sans-serif;
+  .content h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "SF Pro Display Bold", sans-serif;
+  }
 }
 
-
-}
-
-.landmark_heading{
+.landmark_heading {
   color: white !important;
 }
