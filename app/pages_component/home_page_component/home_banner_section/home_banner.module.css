@@ -173,12 +173,14 @@
 .heroSectionImage {
   background: url('/image/home-banner-image.png') center/contain no-repeat;
   width: 100%;
-  aspect-ratio: 16 / 9; /* or set an explicit height */
+  aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 600px) {
-    .heroSectionImage {
-    background-image: url('/image/home-banner-image-mobile.png');
+  .heroSectionImage {
+    height: 900px;
+    background: url('/image/home-banner-image-mobile.png') top/cover no-repeat;
+    aspect-ratio: 16 / 9;
   }
 }
 
