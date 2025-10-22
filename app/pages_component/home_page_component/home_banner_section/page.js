@@ -39,7 +39,12 @@ export default function HomeBanner() {
       {/* <div className={styles.heroSectionImage}>
       <img src="/image/home-banner-image.png" /> 
       </div> */}
-       <div className={styles.heroSectionImage}></div>
+       {/* <div className={styles.heroSectionImage}></div> */}
+       {/* <img src="" /> */}
+       <div className={styles.heroSectionImage}>
+  <img className={styles.desktopImage} src="/image/home-banner-image.png" alt="Desktop Banner" />
+  <img className={styles.mobileImage} src="/image/home-banner-image-mobile.png" alt="Mobile Banner" />
+</div>
     </div>
   );
 }
