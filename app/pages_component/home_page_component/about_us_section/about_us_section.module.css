@@ -104,13 +104,15 @@
 .dot {
   display: inline-block;
   width: 9px;
+  min-width: 9px;
   height: 8px;
-  border-radius: 999px;
+  min-height: 8px;
+  border-radius: 99px;
   background: var(--accent);
   box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
   vertical-align: text-top;
   margin-right: 8px;
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .wrap {
@@ -310,6 +312,7 @@
 }
 
 @media (max-width: 1160px) {
+
   .inner {
     grid-template-columns: 1.1fr 1.2fr;
     gap: 20px;
@@ -588,9 +591,9 @@
     column-gap: 10px;
     justify-content: start;
   }
-  .dot {
+  /* .dot {
     margin-top: 1px;
-  }
+  } */
 
   .card,
   .backOne,

@@ -35,6 +35,11 @@ export default function LandmarkDetails() {
               alt="Phone Mockup"
               className={styles.phone_image}
             />
+              <img
+              src="/image/phone_image_mobile.png"
+              alt="Phone Mockup"
+              className={styles.mobile_image}
+            />
           </div>
         </div>
       </div>

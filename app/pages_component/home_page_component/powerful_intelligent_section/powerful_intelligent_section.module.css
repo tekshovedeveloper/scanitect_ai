@@ -223,7 +223,36 @@
   max-width: 32ch;
 }
 
+@media (max-width: 1250px) {
+
+
+ .BadgeConnectorLeft,
+  .BadgeConnectorRight {
+    object-fit: contain;
+  }
+
+}
+
 @media (max-width: 1200px) {
+   .Powerfulinner {
+    padding: 90px 20px 110px 20px; 
+  }
+
+  .BadgeConnector {
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; */
+  /* height: 41px; */
+  top: 295px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1; */
+}
+
   .BadgeConnectorLeft,
   .BadgeConnectorRight {
     object-fit: contain;
@@ -236,7 +265,7 @@
   }
 
   .Powerfulinner {
-    padding: 50px 20px 110px 20px;
+    padding: 10px 20px 110px 20px;
   }
 
   .Powerfulsubtitle {
@@ -272,6 +301,9 @@
 }
 
 @media (max-width: 570px) {
+    .Powerfulinner {
+    padding: 60px 20px 110px 20px; 
+  }
   .PowerfulheroSection {
     padding-bottom: 100px;
   }

@@ -53,6 +53,7 @@
 }
 
 .content h1 {
+    font-size: 40px;
   font-weight: 600;
   font-family: "SF Pro Display Bold", sans-serif;
 }
@@ -99,16 +100,21 @@
 .phoneMock img {
   width: 100%;
   height: 370px;
+  max-width: 554px;
   border-radius: 12px;
   object-fit: cover;
 }
 
-.phone_image {
+.mobile_image{
+  display: none;
+}
+
+/* .phone_image {
   width: 100%;
   max-width: 554px;
   height: 370px;
   object-fit: cover;
-}
+} */
 
 @media (max-width: 1024px) {
   .content {
@@ -125,7 +131,7 @@
     text-align: center;
     padding: 40px 20px 0px 20px;
     height: auto;
-    gap: 60px;
+    gap: 40px;
   }
 
   .content {
@@ -150,12 +156,18 @@
     justify-content: center;
   }
 
-  .phoneMock img,
-  .phone_image {
+  .phoneMock img {
     height: 450px !important;
     max-width: 100%;
     width: 100%;
   }
+
+.phone_image{
+  display: none;
+}
+.mobile_image{
+  display: block;
+}
 }
 
 @media (max-width: 600px) {
