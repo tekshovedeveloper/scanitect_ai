@@ -95,6 +95,7 @@
   max-width: 545px;
   display: flex;
   justify-content: center;
+  /* background-color: #e5c500; */
 }
 
 .phoneMock img {
@@ -131,7 +132,7 @@
     text-align: center;
     padding: 40px 20px 0px 20px;
     height: auto;
-    gap: 40px;
+    gap: 80px;
   }
 
   .content {
@@ -160,6 +161,8 @@
     height: 450px !important;
     max-width: 100%;
     width: 100%;
+  object-fit: cover;
+  object-position: center left;
   }
 
 .phone_image{
