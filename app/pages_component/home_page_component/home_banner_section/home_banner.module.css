@@ -199,6 +199,7 @@
     display: none;
   }
   .heroSectionImage .mobileImage  {
+    margin-top: 50px;
     display: block;
   }
 }

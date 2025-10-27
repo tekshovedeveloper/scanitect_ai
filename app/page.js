@@ -8,6 +8,7 @@ import AboutUs from '@/app/pages_component/home_page_component/about_us_section/
 import PowerfulIntelligent from '@/app/pages_component/home_page_component/powerful_intelligent_section/page'
 import SmartAiTravel from '@/app/pages_component/home_page_component/smart_AI_travel/page'
 import SmartAIBuiltSection from '@/app/pages_component/home_page_component/smart_Ai_built_section/page'
+import GuideVideoSection from '@/app/pages_component/home_page_component/guide_video_section/page'
 import LandmarkDetails from '@/app/pages_component/home_page_component/landmark_details/page'
 import ContactUs from './pages_component/home_page_component/contact_us/page';
 import SubscribeForm from '@/app/pages_component/home_page_component/SubscribeForm/page'
@@ -42,6 +43,7 @@ export default function Home() {
       <div className="content">
         <HomeBanner />
         <AboutUs /> 
+        <GuideVideoSection />
         <PowerfulIntelligent />
          <SmartAiTravel />
        <SmartAIBuiltSection />

@@ -31,7 +31,15 @@ recommendations, and stories.
               Sign up for early access
             </button>
 
-            <button className={`${styles.btn} ${styles.btnSecondary}`}>
+            <button className={`${styles.btn} ${styles.btnSecondary}`}
+            onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("guideVideo")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
+            >
               <span>▶</span> Watch Demo
             </button>
           </div>

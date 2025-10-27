@@ -12,7 +12,7 @@ export default function Footer() {
             className="h-30 w-162"
           />
           <h6 className="Powerfultitle">
-            <span className="Powerfulhighlight">Scan the City;</span> Discover the Story
+            <span className="Powerfulhighlight">Scan the Building;</span> Discover the Story
           </h6>
         
          
