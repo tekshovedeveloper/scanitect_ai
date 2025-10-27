@@ -8,13 +8,14 @@ export default function HomeBanner() {
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h2 className={styles.subtitle}>
-            <span className={styles.gradientText}>Scan The City</span>
+            <span className={styles.gradientText}>Scan The Building</span>
           </h2>
           <h1 className={styles.title}>Discover The Story</h1>
           <p className={styles.description}>
-            AI-powered travel companion to help you Instantly identify
-            landmarks, discover interesting facts and plan your next stop….all
-            without missing a moment.
+            AI Powered travel companion app to satisfy your curiosity about
+whatever catches your eye. Spot an interesting landmark, building, or
+monument? Just scan what you see, and get background information, fun facts,
+recommendations, and stories.
           </p>
           <div className={styles.buttons}>
             <button

@@ -21,12 +21,12 @@ export default function AboutUs() {
               Your interests: Not a generic packaged tour
             </li>
             <li className={`${styles.item} ${styles.secondItem}`}>
-              <span className={styles.dot} /> Real-time discovery: suggestions
+              <span className={styles.dot} /> Real-time discovery: Suggestions
               and recommendations of interesting things nearby
             </li>
             <li className={`${styles.item} ${styles.thirdItem}`}>
               <span className={styles.dot} /> Instantly satisfy your curiosity:
-              no need to research or read a tourbook
+              No need to research or read a tourbook
             </li>
           </ul>
         </div>
