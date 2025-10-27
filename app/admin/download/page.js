@@ -3,6 +3,8 @@
 import React from 'react';
 import { getAllEmail } from "@/utils/api";
 // import ProtectedPageLayout from '@/app/admin/layout';
+import styles from './download.module.css'
+
 
 export default function DownloadSheetPage() {
   const handleDownload = async () => {
@@ -45,21 +47,23 @@ console.log("the email", response)
   return (
     //  <ProtectedPageLayout>
     <div style={{ textAlign: 'center', marginTop: '100px' }}>
-      <h1>Download Email Sheet</h1>
-      <button
-        onClick={handleDownload}
-        style={{
-          padding: '10px 20px',
-          fontSize: '16px',
-          backgroundColor: '#0070f3',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        Download
-      </button>
+      <div className={styles.Downloadcontent}>
+          <h1 className={styles.Downloadtitle}>
+            Download <span className={styles.Downloadhighlight}>Email</span>{" "}
+            Sheet
+          </h1>
+        </div>
+      {/* <h1>Download Email Sheet</h1> */}
+      <div className={styles.btnDiv}>
+
+          <button
+          className={styles.download_btn}
+            onClick={handleDownload}
+            
+          >
+            Download
+          </button>
+      </div>
     </div>
     // </ProtectedPageLayout>
   );
