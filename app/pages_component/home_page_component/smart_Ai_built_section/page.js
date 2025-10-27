@@ -8,7 +8,7 @@ export default function SmartAIBuiltSection() {
       PowerfulStep: "Step 1",
       PowerfulTitle: "Computer Vision",
       PowerfulDesc:
-        "Advanced CNN (?) models for architectural feature detection ",
+        "Advanced CNN models for architectural feature detection ",
       iconSrc: "/image/computer_vision.svg",
     },
     {
