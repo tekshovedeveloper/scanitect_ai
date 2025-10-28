@@ -43,7 +43,7 @@ export default function Home() {
       <div className="content">
         <HomeBanner />
         <AboutUs /> 
-        <GuideVideoSection />
+        {/* <GuideVideoSection /> */}
         <PowerfulIntelligent />
          <SmartAiTravel />
        <SmartAIBuiltSection />
