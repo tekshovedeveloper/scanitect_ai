@@ -32,7 +32,7 @@ export default function PowerfulIntelligent() {
       <div className={styles.Powerfulinner}>
         <div className={styles.Powerfulcontent}>
           <h1 className={styles.Powerfultitle}>
-            Simple <span className={styles.Powerfulhighlight}>Powerful</span>{" "}
+            Simple test <span className={styles.Powerfulhighlight}>Powerful</span>{" "}
             Intelligent
           </h1>
           <p className={styles.Powerfulsubtitle}>
