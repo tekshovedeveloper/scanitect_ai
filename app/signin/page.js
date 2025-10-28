@@ -20,10 +20,19 @@ export default function SignIn() {
     const response = await postRequest('auth/login', formData);
 
     if (response.statusCode == 200) {
-      console.log('LOGED IN');
+      if(response.data.userData.role === 'admin'){
+         console.log('LOGED IN');
+      console.log(response);
+      alert('successfully signed in in admin portal');
+      router.push('/admin/download');
+      }
+      else{
+  console.log('LOGED IN');
       console.log(response);
       alert('successfully signed in');
       router.push('/');
+      }
+    
     } else {
       console.log('ERROR LOGED IN');
       console.log(response);
