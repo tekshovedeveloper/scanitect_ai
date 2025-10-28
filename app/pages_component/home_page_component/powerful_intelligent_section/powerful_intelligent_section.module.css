@@ -225,6 +225,14 @@
 .MainText{
   font-style: italic;
 }
+
+.MainText::before {
+  content: "“";
+}
+.MainText::after {
+  content: "”";
+}
+
 @media (max-width: 1250px) {
 
 

@@ -36,7 +36,7 @@ export default function PowerfulIntelligent() {
             Intelligent
           </h1>
           <p className={styles.Powerfulsubtitle}>
-            Three simple steps to answer the question<span className={styles.MainText}> I wonder what that
+            Three simple steps to answer the question <span className={styles.MainText}>I wonder what that
             building is?</span>
           </p>
         </div>
