@@ -52,6 +52,7 @@ export default function SignIn() {
             id="email"
             name="email"
             className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            style={{ color: formData.email ? 'black' : '#888' }}
             value={formData.email} onChange={handleChange}
           />
 
@@ -63,7 +64,9 @@ export default function SignIn() {
             id="password"
             name="password"
             className="mt-1 p-2 border border-gray-300 rounded-md w-full"
+            
             value={formData.password} onChange={handleChange}
+             style={{ color: formData.password ? 'black' : '#888' }}
           />
           <button
             type="submit"

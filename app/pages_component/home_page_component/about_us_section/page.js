@@ -43,12 +43,12 @@ export default function AboutUs() {
                   />
                 </span>
                 <h3 className={styles.cardTitle}>
-                  Instantly satisfy your curiosity
+                  Deep Insights
                 </h3>
               </header>
 
               <p className={styles.body}>
-                no need to research or read a tourbook
+                Comprehensive analysis including architectural details, historical context, and cultural significance.
               </p>
             </div>
 
@@ -61,11 +61,11 @@ export default function AboutUs() {
                     className={styles.icon}
                   />
                 </span>
-                <h3 className={styles.cardTitle}>Real-time discovery</h3>
+                <h3 className={styles.cardTitle}>Lighting Fast</h3>
               </header>
 
               <p className={styles.body}>
-                suggestions and recommendations of interesting things nearby
+               Optimized Al models deliver comprehensive building analysis in under 3 seconds, perfect for real-time exploration.
               </p>
             </div>
 
@@ -78,10 +78,10 @@ export default function AboutUs() {
                     className={styles.icon}
                   />
                 </span>
-                <h3 className={styles.cardTitle}>Your interests</h3>
+                <h3 className={styles.cardTitle}>Instant Recognition</h3>
               </header>
 
-              <p className={styles.body}>Not a generic packaged tour</p>
+              <p className={styles.body}>Advanced computer vision identifies architectural styles, historical periods, and building types within seconds.</p>
             </article>
           </div>
         </div>

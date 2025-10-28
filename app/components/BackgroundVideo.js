@@ -16,7 +16,7 @@ export default function BackgroundVideo() {
 
     const lowMem = navigator.deviceMemory && navigator.deviceMemory <= 2;
 
-    // Pick a smaller source on small screens
+    // Pick a smaller source on small screens 
     const w = window.innerWidth;
     let pick = '/videos/bg-480p.mp4';
     if (w >= 1024) pick = '/videos/bg-1080p.mp4';
