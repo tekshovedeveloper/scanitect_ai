@@ -47,7 +47,14 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Push behind everything */
+  z-index: -1; 
+   pointer-events: none; /* Prevents Safari play overlay */
+  /* background-color: black; */
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 .content {

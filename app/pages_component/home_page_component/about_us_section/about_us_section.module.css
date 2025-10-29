@@ -31,7 +31,9 @@
   position: absolute;
   inset: -20% -10% 0 -10%;
   pointer-events: none;
+  /* background-color: #1a1a1a; */
 }
+
 
 .hero::before {
   content: "";
@@ -43,7 +45,7 @@
 }
 
 .inner {
-  height: 500px;
+  height: 570px;
   max-width: 1400px;
   margin: 0 auto;
   padding: clamp(16px, 2vw, 26px) 24px;
@@ -51,6 +53,7 @@
   grid-template-columns: 1.05fr 1fr;
   gap: 30px;
   align-items: center;
+  /* background-color: #0f1215; */
 }
 
 .copy {
@@ -114,6 +117,9 @@
   margin-right: 8px;
   margin-top: 8px;
 }
+
+
+
 
 .wrap {
   height: 100%;
@@ -363,6 +369,18 @@
     margin: 0 auto;
   }
 
+  .sideImage{
+  /* background-color: #a1a1aa; */
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  /* align-item: center ; */
+}
+
+.aboutUsImage{
+   height : 500px
+}
+
   .wrap {
     margin-top: 120px;
     display: flex;
@@ -498,6 +516,9 @@
     font-size: 14px;
     line-height: 26px;
   }
+  .aboutUsImage{
+   height : 350px
+}
 
   .wrap {
     display: flex;
@@ -594,6 +615,11 @@
   /* .dot {
     margin-top: 1px;
   } */
+
+
+   .aboutUsImage{
+   height : 260px
+}
 
   .card,
   .backOne,
