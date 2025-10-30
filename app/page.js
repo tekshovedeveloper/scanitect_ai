@@ -17,7 +17,10 @@ import Footer from './components/footer';
 import BackgroundVideo from './components/BackgroundVideo';
 
 
-
+export const metadata = {
+  title: "ScanitectAi",
+  description: "",
+}
 
 export default function Home() {
   const cookieStore = cookies();
