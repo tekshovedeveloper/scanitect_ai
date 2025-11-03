@@ -13,6 +13,9 @@ import Head from "next/head";
 export const metadata = {
   title: "ScanitectAi",
   description: "",
+  icons: {
+    icon: '/favicon.ico',
+  },
  
 };
 
