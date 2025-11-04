@@ -3,15 +3,15 @@ import Image from "next/image";
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-import HomeBanner from '@/app/pages_component/home_page_component/home_banner_section/page'
-import AboutUs from '@/app/pages_component/home_page_component/about_us_section/page'
-import PowerfulIntelligent from '@/app/pages_component/home_page_component/powerful_intelligent_section/page'
-import SmartAiTravel from '@/app/pages_component/home_page_component/smart_AI_travel/page'
-import SmartAIBuiltSection from '@/app/pages_component/home_page_component/smart_Ai_built_section/page'
-import GuideVideoSection from '@/app/pages_component/home_page_component/guide_video_section/page'
-import LandmarkDetails from '@/app/pages_component/home_page_component/landmark_details/page'
+import HomeBanner from './pages_component/home_page_component/home_banner_section/page'
+import AboutUs from './pages_component/home_page_component/about_us_section/page'
+import PowerfulIntelligent from './pages_component/home_page_component/powerful_intelligent_section/page'
+import SmartAiTravel from './pages_component/home_page_component/smart_AI_travel/page'
+import SmartAIBuiltSection from './pages_component/home_page_component/smart_Ai_built_section/page'
+import GuideVideoSection from './pages_component/home_page_component/guide_video_section/page'
+import LandmarkDetails from './pages_component/home_page_component/landmark_details/page'
 import ContactUs from './pages_component/home_page_component/contact_us/page';
-import SubscribeForm from '@/app/pages_component/home_page_component/SubscribeForm/page'
+import SubscribeForm from './pages_component/home_page_component/SubscribeForm/page'
 
 import Footer from './components/footer';
 import BackgroundVideo from './components/BackgroundVideo';

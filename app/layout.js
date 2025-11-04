@@ -4,8 +4,8 @@ import { Providers } from "../redux/providers";
 import { stores } from "../redux/store";
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation';
-import Sidebar from '@/app/components/Sidebar';
-import Header from '@/app/components/Header';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
 import Head from "next/head";
  
 

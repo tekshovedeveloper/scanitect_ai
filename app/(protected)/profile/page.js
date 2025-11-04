@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Header from "@/app/components/Header";
-import { getData } from "@/utils/api";
+import Header from "./components/Header";
+import { getData } from "../../../utils/api";
 import { cookies } from 'next/headers';
 
 export default async function Profile() {

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { addSubscriptionEmail } from "@/utils/api";
+import { addSubscriptionEmail } from "../../../../utils/api";
 import styles from "./subscribe_form.module.css";
 
 export default function SubscribeForm() {
