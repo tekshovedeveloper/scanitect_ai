@@ -3,7 +3,7 @@ import Image from "next/image";
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-import HomeBanner from './pages_component/home_page_component/home_banner_section/page'
+import HomeBanner from '@/app/pages_component/home_page_component/home_banner_section/page'
 import AboutUs from './pages_component/home_page_component/about_us_section/page'
 import PowerfulIntelligent from './pages_component/home_page_component/powerful_intelligent_section/page'
 import SmartAiTravel from './pages_component/home_page_component/smart_AI_travel/page'
