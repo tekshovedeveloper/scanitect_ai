@@ -8,7 +8,8 @@ export default function HomeBanner() {
 
   // Your ScreenPal embed (encode % as %25)
   const screenPalUrl =
-    "https://go.screenpal.com/player/cT6uDJnFnNw?width=100%25&height=100%25&ff=1&title=0";
+    // "https://go.screenpal.com/player/cT6uDJnFnNw?width=100%25&height=100%25&ff=1&title=0";
+    "https://go.screenpal.com/player/cTXhoInFumZ?width=100%&height=100%&ff=1&title=0";
 
   return (
     <div className={styles.outerContainer}>
