@@ -16,6 +16,9 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  alternates: {
+    canonical: 'https://scanitectai.com/',
+  },
  
 };
 

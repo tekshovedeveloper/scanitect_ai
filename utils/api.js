@@ -1,5 +1,5 @@
-// const baseURL =  '/api';
-const baseURL = 'http://localhost:4000'
+const baseURL =  '/api';
+// const baseURL = 'http://localhost:4000'
 
 export const postRequest = async (endpoint, data) => {
   try {
