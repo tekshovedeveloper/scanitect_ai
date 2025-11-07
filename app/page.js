@@ -20,6 +20,12 @@ import BackgroundVideo from './components/BackgroundVideo';
 export const metadata = {
   title: "ScanitectAi",
   description: "",
+   icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: 'https://scanitectai.com/',
+  },
 }
 
 export default function Home() {
