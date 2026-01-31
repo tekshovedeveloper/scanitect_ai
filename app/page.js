@@ -17,7 +17,7 @@ import Footer from './components/footer';
 import BackgroundVideo from './components/BackgroundVideo';
 
 
-export const metadata = {
+export const metadata = { 
   title: "ScanitectAi",
   description: "",
   icons: {
